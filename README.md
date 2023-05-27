@@ -16,6 +16,18 @@ Therefore, a solution that balances accurate measurement and the necessary costs
 
 ### Solution
 
-We used logistics regression as the model. And for training and testing we split the data into 0.6:0.4 ratio by holdout classification.
+The data set is divided into training and testing by 0.6:0.4 ratio
 
-So, far we got 0.57 accuracy. But I think we can do better.
+```python
+X_training, X_testing, y_training, y_testing = train_test_split(
+    X_main, y_main, test_size=0.4,random_state=42
+)
+```
+
+Multiple models were tested. Among them XGBoost performer best. which is a regularizing gradient boosting framework. Confusion matrix and accuracy of the models are added.
+
+| Model            |   Support Vector Machine   |       Logistics Regression       |            XGBoost             |
+| ---------------- | :------------------------: | :------------------------------: | :----------------------------: |
+| Confusion Matrix | ![](Task 1\assets\svm.jpg) | ![](Task 1\assets\logistics.jpg) | ![](Task 1\assets\xgboost.jpg) |
+| Accuracy         |            0.54            |               0.57               |              0.8               |
+
