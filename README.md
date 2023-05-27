@@ -26,8 +26,8 @@ X_training, X_testing, y_training, y_testing = train_test_split(
 
 Multiple models were tested. Among them XGBoost performer best. which is a regularizing gradient boosting framework. Confusion matrix and accuracy of the models are added.
 
-| Model            |   Support Vector Machine   |       Logistics Regression       |            XGBoost             |
-| ---------------- | :------------------------: | :------------------------------: | :----------------------------: |
-| Confusion Matrix | ![](Task 1\assets\svm.jpg) | ![](Task 1\assets\logistics.jpg) | ![](Task 1\assets\xgboost.jpg) |
-| Accuracy         |            0.54            |               0.57               |              0.8               |
+| Model            |    Support Vector Machine    |        Logistics Regression        |             XGBoost              |
+| ---------------- | :--------------------------: | :--------------------------------: | :------------------------------: |
+| Confusion Matrix | ![](Task%201/assets/svm.jpg) | ![](Task%201/assets/logistics.jpg) | ![](Task%201/assets/xgboost.jpg) |
+| Accuracy         |             0.54             |                0.57                |               0.8                |
 
